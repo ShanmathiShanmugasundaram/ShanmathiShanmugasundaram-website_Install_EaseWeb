@@ -1,0 +1,246 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Software installation_bootstrap</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- Custom CSS -->
+  <style>
+    /* Add your custom CSS styles here */
+    /* For example: */
+    body {
+      padding-top: 60px;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    .carousel-item {
+      height: 700px; 
+      background-size: cover;
+      background-position: center;
+    }
+    .carousel-caption{
+      bottom: 300px;
+    }
+
+    .carousel-caption h5{
+      font-size: 45px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      margin-top: 25px;
+      font-family:sans-serif;
+    }
+    .carousel-caption{
+      width: 60%;
+      margin: auto;
+      font-size: 18px;
+      line-height: 1.9;
+      font-family: poppins;
+    }
+
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: red;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+</style>
+</head>
+<body style="background-color:white;">
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+    <!--a class="navbar-brand" href="#"></a-->
+    <img src = "InstallEase_logo.png" alt = "InstallEase logo" height = "50" width = "50">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">  <a class="nav-link" href="login_page.html">Login</a>
+        </li>
+          <!--<div class="navbar">
+            
+              <button class="dropbtn">Category
+                <i class="fa fa-caret-down"></i>
+              </button>
+              <div class="dropdown-content">
+                <a href="web_browsers.html">Web Browsers</a>
+                <a href="messaging.html">Messaging</a>
+                <a href="Media.html">Media</a>
+                <a href="Online Storage.html">Online Storage</a>
+                <a href="DeveloperTools.html">Developer Tools</a>
+                <a href="Runtimes.html">Runtimes</a>-->
+        <li class="nav-item">
+          <a class="nav-link" href="blur_login.html">sign up</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="about.html">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="test_reviews.html">Reviews</a>
+        </li>
+        <!--dropdown to be added-->
+        <!--li>
+        <div class="dropdown">
+            <button class="dropbtn">Categories
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="Web_browsers.html">Web Browsers</a>
+              <a href="Messaging.html">Messaging</a>
+              <a href="Online Storage.html">Online Storage</a>
+              <a href="Media.html">Media</a>
+              <a href="Developer Tools.html">Developer Tools</a>
+              <a href="Runtimes.html">Runtimes</a>
+            </div>
+          </div>
+          </li-->
+        </div>
+      </div>
+    </div>
+
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Carousel Header -->
+  <header>
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item active" style="background-image: url('blue_background_5.jpg');">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Web Browsers</h5>
+            <p>No Hustle. No Bustle</p>
+          <h3>
+ WELCOME<!--<?php echo $_SESSION['name'];?-->
+</h3>
+            <a class="btn btn-primary btn-lg" href="web_browsers.html" role="button">Learn more</a>
+          </div>
+        </div>
+        <div class="carousel-item" style="background-image: url('messaging_homepage_2.jpg');">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Messaging</h5>
+            <p>Software Installation at your fingertips</p>
+            <a class="btn btn-primary btn-lg" href="Messaging.html" role="button">Learn more</a>
+          </div>
+        </div>
+        <div class="carousel-item" style="background-image: url('online_storage_homepage_2.jpg');">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Online Storage</h5>
+            <p>Software Installation Made Easy...</p>
+            <a class="btn btn-primary btn-lg" href="Online Storage.html" role="button">Learn more</a>
+          </div>
+        </div>
+        <div class="carousel-item" style="background-image: url('media_homepage_1.jpg');">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Media</h5>
+            <p>Software Installation Made Easy...</p>
+            <a class="btn btn-primary btn-lg" href="Media.html" role="button">Learn more</a>
+          </div>
+        </div>
+        <div class="carousel-item" style="background-image: url('developer_tools_homepage_2.jpg');">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Developer Tools</h5>
+            <p>Software Installation Made Easy...</p>
+            <a class="btn btn-primary btn-lg" href = "DeveloperTools.html" role="button">Learn more</a>
+          </div>
+        </div>
+        <div class="carousel-item" style="background-image: url('runtimes_homepage_2.jpg');">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Runtimes</h5>
+            <p>Software Installation Made Easy...</p>
+            <a class="btn btn-primary btn-lg" href="Runtimes.html" role="button">Learn more</a>
+          </div>
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+  </header>
+
+  
+  <!-- Footer -->
+  <footer class="footer mt-auto py-3 bg-dark">
+    <div class="container text-white text-center">
+      <span>&copy; 2024 Your Website</span>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS and dependencies -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
