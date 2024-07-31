@@ -7,8 +7,8 @@ Our platform provides clear paths and step-by-step instructions to make software
 We included several Software categories named  runtimes, online storage solutions, web browsers, developer tools and media.
 
 Webpage view:
-![Alt text](Developer tools.png)
-![Alt text](Developer1 tools.png)
+![Alt text](Developer_tools.png)
+![Alt text](Developer1_tools.png)
 
 Steps to Run our code:
 
